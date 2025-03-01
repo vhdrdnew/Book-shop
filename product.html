@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="header__nav nav__container">
+        <div class="nav__item nav__item__1">
+          <img src="img/logo.svg" alt="" class="logo">
+          <div class="search__panel">
+            <input type="text" class="search__input">
+            <span class="search__btn"></span>
+          </div>
+          <ul class="user__icon-menu">
+            <li class="heart">
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li class="user__login">
+              <i class="fa-solid fa-user"></i>
+            </li>
+            <li class="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__item nav__item__2">
+          <ul class="menu">
+            <li class="menu__list">Categories</li>
+            <li class="menu__list">New</li>
+            <li class="menu__list">Sale</li>
+            <li class="menu__list">Popular</li>
+            <li class="menu__list">Gift</li>
+            <li class="menu__list">About us</li>
+            <li class="menu__list">Delivery & payment</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="product__container">
+        <div class="product__img">
+          <img src="img/book/programming/book-01.jpg" alt="Product image">
+        </div>
+        <div class="product__info">
+          <h1 class="product__title">Product title</h1>
+          <p class="product__price" data-price="100">$100</p>
+          <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+          <div class="product__quantity">
+            <button class="btn__quantity btn__decrease">-</button>
+            <span class="quantity__number">1</span>
+            <button class="btn__quantity btn__increase">+</button>
+          </div>
+          <div class="product__btn">
+            <button class="btn__add">Add to cart</button>
+            <button class="btn__buy">Buy now</button>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </div>
+
+  <script>
+    // Знаходимо потрібні елементи
+const priceElement = document.querySelector('.product__price');
+const quantityElement = document.querySelector('.quantity__number');
+const decreaseButton = document.querySelector('.btn__decrease');
+const increaseButton = document.querySelector('.btn__increase');
+
+// Базова ціна товару
+const basePrice = parseInt(priceElement.dataset.price, 10);
+
+// Оновлення ціни
+function updatePrice() {
+  const quantity = parseInt(quantityElement.textContent, 10);
+  const totalPrice = basePrice * quantity;
+  priceElement.textContent = `$${totalPrice}`;
+}
+
+// Додавання кількості
+increaseButton.addEventListener('click', () => {
+  let quantity = parseInt(quantityElement.textContent, 10);
+  quantity++;
+  quantityElement.textContent = quantity;
+  updatePrice();
+});
+
+// Зменшення кількості
+decreaseButton.addEventListener('click', () => {
+  let quantity = parseInt(quantityElement.textContent, 10);
+  if (quantity > 1) {
+    quantity--;
+    quantityElement.textContent = quantity;
+    updatePrice();
+  }
+});
+
+  </script>
+</body>
+</html>

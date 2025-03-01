@@ -1,1 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="header__nav nav__container">
+        <div class="nav__item nav__item__1">
+          <img src="img/logo.svg" alt="" class="logo">
+          <div class="search__panel">
+            <input type="text" class="search__input" id="searchInput">
+            <span class="search__btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+          <ul class="user__icon-menu">
+            <li class="heart">
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li class="user__login">
+              <i class="fa-solid fa-user"></i>
+            </li>
+            <li class="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__item nav__item__2">
+          <ul class="menu">
+            <li class="menu__list">Categories</li>
+            <li class="menu__list">New</li>
+            <li class="menu__list">Sale</li>
+            <li class="menu__list">Popular</li>
+            <li class="menu__list">Gift</li>
+            <li class="menu__list">About us</li>
+            <li class="menu__list">Delivery & payment</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="heading__container heading">
+        <h1 class="heading__title">Welc
+          <div class="heading__star">
+            <img src="img/star.svg" alt="" class="star">
+            <img src="img/hashtag.svg" alt="" class="hashtag">
+          </div>
+          me
+        </h1>
+        <h1 class="heading__title">I’m TECH bookstore</h1>
+      </div>
+      <div class="hero__container">
+
+        <div class="tags-section__tag busines">
+          <div class="arrow-block">
+            <span class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <h2 class="tags__title">#Busines</h2>
+        </div>
+        <div class="tags-section__tag design">
+          <div class="arrow-block">
+            <span class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <h2 class="tags__title">#Design</h2>
+        </div>
+        <div class="tags-section__tag programming">
+          <div class="arrow-block">
+            <span class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <h2 class="tags__title">#Programming</h2>
+        </div>
+        <div class="tags-section__tag extras">
+          <div class="block"></div>
+          <div class="extras__block">
+            <div class="extras__item">Wide Selection</div>
+            <div class="extras__item">Experts</div>
+            <div class="extras__item">Accessibility</div>
+            <div class="extras__item">Professional</div>
+            <div class="extras__item">Promotions</div>
+            <div class="extras__item">Blog</div>
+          </div>
+        </div>
+        <div class="tags-section__tag management">
+          <div class="arrow-block">
+            <span class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <h2 class="tags__title">#Management</h2>
+        </div>
+      </div>
+
+      <div class="category__container category__grid">
+        <div class="categories">
+          <div class="product-category" data-target="cleanse">All books
+            <span class="product__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <div class="product-category" data-target="exfoliate">New
+            <span class="product__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <div class="product-category" data-target="hydrate">Best sellers
+            <span class="product__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <div class="product-category" data-target="tone">Sale
+            <span class="product__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+        <section class="content-sections">
+          <div class="content-section" id="cleanse">
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/вивчаємо c++ через програмування ыгор.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__02">
+              <img src="img/book/programming/ES6 і не тільки.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__03">
+              <img src="img/book/programming/f7644b56cd0ae537784e23b64857cf80_L.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/f7b9be29873ad525695063e6e748eae3_L.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__02">
+              <img src="img/book/programming/fb5c27012bf7bd2b528a5fe03304bd91_L.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__03">
+              <img src="img/book/programming/git для професійного програміста.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__04">
+              <img src="img/book/programming/HTML CSS3.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__05">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__06">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__07">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__08">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__09">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__10">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__11">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__12">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+          </div>
+          <div class="content-section" id="exfoliate">
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/ES6 і не тільки.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__02">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__03">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__04">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__05">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__06">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__07">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__08">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__09">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__10">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__11">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__12">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+          </div>
+          <div class="content-section" id="hydrate">
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/Як самостійно написати мобільну 2d гру.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__02">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__03">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__02">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__03">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__04">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__05">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__06">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__07">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__08">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__09">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__10">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__11">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__12">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+          </div>
+          <div class="content-section" id="tone">
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/Креативний програміст.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__02">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__03">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__01">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__02">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__03">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__04">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__05">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__06">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__07">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__08">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__09">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__10">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__11">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+            <article class="product-card product-card__12">
+              <img src="img/book/programming/book-01.jpg" alt="" class="product-img">
+              <p class="item">Javascript</p>
+              <p class="product-card__price">$55.00</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="about__grid about__container">
+          <div class="about__element about-us__card--offer">
+            <p class="element__name">What We Offer</p>
+            <p class="element__text">Explore the diverse range of content and
+              resources we provide, catering
+              to various interests and needs.</p>
+          </div>
+          <div class="about__element about-us__card--value">
+            <div class="about__element-block">Explore the diverse range of content
+              and resources we provide,
+              catering to various interests and needs.</div>
+            <div class="our__element">our values</div>
+          </div>
+          <div class="about__element about-us__card--story">
+            <div class="our__element">our story</div>
+            <div class="about__element-block">Explore the diverse range of content
+              and resources we provide,
+              catering to various interests and needs.</div>
+          </div>
+          <div class="about__element about-us__card--mission">
+            <div class="about__element-block">Explore the diverse range of content
+              and resources we provide,
+              catering to various interests and needs.</div>
+            <div class="our__element">our mission</div>
+          </div>
+          <div class="about__element community">
+            <p class="element__name">What We Offer</p>
+            <p class="element__text">Explore the diverse range of content and
+              resources we provide, catering
+              to various interests and needs.</p>
+          </div>
+          <div class="about__element about_us">
+            <h1 class="about__title">About us</h1>
+          </div>
+        </div>
+      </div>
+      <div class="blog__section blog__container">
+        <div class="blog__item blog__item--1">
+          <img src="img/blog book.jpg" alt="" class="blog__image">
+          <div class="blog-section__tag begginers">
+            Top 10 books for begginers
+            <div class="arrow-block">
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>  
+          </div>
+          <div class="blog-section__tag navigation">
+            <div class="arrow-block">
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>  
+            Navigation Tech Careers
+          </div>
+          <div class="blog-section__tag future">
+            <div class="arrow-block">
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+            <p class="blog__section--text">The Future of Tech</p>  
+          </div>
+        </div>
+        <div class="blog__item blog__item--2">
+          <div class="blog__title">
+            <p class="blog__title--text">BLOG</p>
+          </div>
+          <div class="blog-section__tag tech">
+            <div class="arrow-block">
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div> 
+            <p class="blog__section--text">Women in Tech</p> 
+          </div>
+          <div class="blog-section__tag industry">
+            <div class="arrow-block">
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>  
+            <p class="blog__section--text">What’s new in IT industry</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img src="img/logo.svg" alt="" class="logo">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <span class="advantages__icon"><i class="fa-solid fa-truck"></i></span>
+            <div class="advantages__text">
+              <p class="advantages__title">Free Delivery</p>
+              <div class="advantages__small">Orders over $50</div>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon"><i class="fa-solid fa-share"></i></span>
+            <div class="advantages__text">
+              <p class="advantages__title">Easy to return</p>
+              <div class="advantages__small">Closes post office</div>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__icon"><i class="fa-solid fa-wallet"></i></span>
+            <div class="advantages__text">
+              <p class="advantages__title">Money Back Guarantee</p>
+              <div class="advantages__small">Within 30 days</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <nav class="footer__nav footer--nav__container">
+        <div class="newsletter__block">
+          <div class="newsletter__title">Newsletter</div>
+          <p class="sign__up">Sign up and get 10% discount for your first purchase</p>
+          <input type="email" placeholder="Email" class="newsletter__input"><button class="sign__up--btn">Sign up</button>
+        </div>
+        <div class="footer__menu--block">
+          <ul class="footer__menu">
+            <li class="footer__menu--title">Information</li>
+            <li class="footer__menu--item">About us</li>
+            <li class="footer__menu--item">Contacts</li>
+            <li class="footer__menu--item">Delivery & payment</li>
+            <li class="footer__menu--item">Return</li>
+          </ul>
+          <ul class="footer__menu">
+            <li class="footer__menu--title">Legal Information</li>
+            <li class="footer__menu--item">Terms & Conditions</li>
+            <li class="footer__menu--item">Privacy Policy</li>
+            <li class="footer__menu--item">Cookies Policy</li>
+          </ul>
+          <ul class="footer__menu">
+            <li class="footer__menu--title">We Accept</li>
+            <ul class="payment">
+              <li class="footer__block">
+                <img src="img/logo/paypal.svg" alt="" class="footer__image">
+              </li>
+              <li class="footer__block">
+                <img src="img/logo/apple-pay.svg" alt="" class="footer__image">
+              </li>
+              <li class="footer__block">
+                <img src="img/logo/google-pay.svg" alt="" class="footer__image">
+              </li>
+              <li class="footer__block">
+                <img src="img/logo/card.svg" alt="" class="footer__image">
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </div>
+  <script src="js/catalog.js"></script>
+  <script src="js/arrow.js"></script>
+</body>
+
+</html>
