@@ -1,47 +1,30 @@
-// Отримуємо елемент
-all_categories = document.querySelectorAll('.product-category');
-arrow = document.querySelectorAll('.product__arrow')
+const categories = document.querySelectorAll(".product-category");
+const sections = document.querySelectorAll(".content-section");
+const prices = document.querySelectorAll(".product-card__price");
 
-// Додаємо подію для наведення
-all_categories[0].addEventListener('click', function() {
-  all_categories[0].style.backgroundColor = '#e52a9a';
-  arrow[0].style.display = "inline";
-});
+const activeBgColor = "#E499C4";
+const activeTextColor = "black";
+const defaultBgColor = "transparent";
+const defaultTextColor = "var(--light_pink)";
 
-// Додаємо подію для покидання елементу
-all_categories[0].addEventListener('click', function() {
-  all_categories[0].style.backgroundColor = '';
-  arrow[0].style.display = "none";
-});
+const defaultCategory = "cleanse";
 
-all_categories[1].addEventListener('mouseover', function() {
-  all_categories[1].style.backgroundColor = '#e52a9a';
-  arrow[1].style.display = "inline";
-});
+function setActiveCategory(target) {
+  categories.forEach(category => {
+    const isActive = category.dataset.target === target;
 
-all_categories[1].addEventListener('mouseout', function() {
-  all_categories[1].style.backgroundColor = '';
-  arrow[1].style.display = "none";
-});
-
-all_categories[2].addEventListener('mouseover', function() {
-    all_categories[2].style.backgroundColor = '#e52a9a';
-    arrow[2].style.display = "inline";
-  });
-  
-  all_categories[2].addEventListener('mouseout', function() {
-    all_categories[2].style.backgroundColor = '';
-    arrow[2].style.display = "none";
+    category.style.backgroundColor = isActive ? activeBgColor : defaultBgColor;
+    category.style.color = isActive ? activeTextColor : defaultTextColor;
+    category.querySelector(".product__arrow").style.display = isActive ? "inline-block" : "none";
   });
 
-  all_categories[3].addEventListener('mouseover', function() {
-    all_categories[3].style.backgroundColor = '#e52a9a';
-    arrow[3].style.display = "inline";
+  sections.forEach(section => {
+    section.style.display = section.id === target ? "grid" : "none";    
   });
-  
-  all_categories[3].addEventListener('mouseout', function() {
-    all_categories[3].style.backgroundColor = '';
-    arrow[3].style.display = "none";
-  });
+}
 
-
+function getRandomPrice(){
+  prices.forEach(price => {
+    price.textContent = `$${getRandomPrice()}`;
+  })
+}
