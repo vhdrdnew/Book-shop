@@ -23,8 +23,20 @@ function setActiveCategory(target) {
   });
 }
 
-function getRandomPrice(){
+function getRandomPrice(min = 20, max = 100) {
+  return (Math.random() * (max-min) + min).toFixed(2);
+}
+
+function setRandomPrices() {
   prices.forEach(price => {
     price.textContent = `$${getRandomPrice()}`;
-  })
+  });
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+  setActiveCategory(defaultCategory);
+  setRandomPrices();
+  categories.forEach(category => {
+    category.addEventListener("click", () => setActiveCategory(category.dataset.target));
+  });
+});
